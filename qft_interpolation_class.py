@@ -11,7 +11,7 @@ from qibo.models import Circuit, QFT
 from qibo import gates
 
 
-class qft_resampling_2d:
+class qft_interpolation_2d:
     """Class that uses qft interpolation to upscale an image."""
 
     def __init__(self, image, upscale_factor):
@@ -188,7 +188,7 @@ class qft_resampling_2d:
         return self.execute()
 
 
-class qft_resampling_1d:
+class qft_interpolation_1d:
     """Class that uses qft interpolation to upscale a probability distribution."""
 
     def __init__(self, probabilities, upscale_factor=None, unary=False):
